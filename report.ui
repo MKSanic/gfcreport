@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="tk.Frame" id="frame2">
+        <property name="height">720</property>
+        <property name="width">640</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+        <child>
+          <object class="tk.Button" id="Opendir" named="True">
+            <property name="background">#fac898</property>
+            <property name="command" type="command" cbtype="simple">opendir</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="height">5</property>
+            <property name="justify">left</property>
+            <property name="overrelief">flat</property>
+            <property name="text" translatable="yes">Open directory</property>
+            <property name="width">100</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Weekly" named="True">
+            <property name="background">#c1e1c1</property>
+            <property name="command" type="command" cbtype="simple">weekly</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="height">5</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">Load weekly files</property>
+            <property name="width">100</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Backup" named="True">
+            <property name="background">#aec6cf</property>
+            <property name="command" type="command" cbtype="simple">backup</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="height">5</property>
+            <property name="justify">left</property>
+            <property name="overrelief">flat</property>
+            <property name="text" translatable="yes">Backup</property>
+            <property name="width">100</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Lbackup" named="True">
+            <property name="background">#fdfd96</property>
+            <property name="command" type="command" cbtype="simple">lbackup</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="height">5</property>
+            <property name="justify">left</property>
+            <property name="overrelief">flat</property>
+            <property name="text" translatable="yes">Load backup</property>
+            <property name="width">100</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Clear" named="True">
+            <property name="background">#ff6961</property>
+            <property name="command" type="command" cbtype="simple">clear</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="height">5</property>
+            <property name="justify">left</property>
+            <property name="overrelief">flat</property>
+            <property name="text" translatable="yes">Clear</property>
+            <property name="width">100</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="frame3">
+        <property name="height">720</property>
+        <property name="width">640</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="tk.Frame" id="frame4">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="anchor">n</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="tk.Frame" id="frame5">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="side">left</property>
+                </layout>
+                <child>
+                  <object class="tk.Label" id="label1">
+                    <property name="height">5</property>
+                    <property name="text" translatable="yes">Start</property>
+                    <layout manager="pack">
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="frame7">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout manager="pack">
+                      <property name="side">top</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Entry" id="sd" named="True">
+                        <layout manager="pack">
+                          <property name="side">left</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="sm" named="True">
+                        <layout manager="pack">
+                          <property name="side">left</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="sy" named="True">
+                        <layout manager="pack">
+                          <property name="side">left</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="frame6">
+                <property name="height">200</property>
+                <property name="padx">3</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+                <child>
+                  <object class="tk.Label" id="label2">
+                    <property name="height">5</property>
+                    <property name="text" translatable="yes">End</property>
+                    <layout manager="pack">
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="frame8">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout manager="pack">
+                      <property name="side">top</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Entry" id="ed" named="True">
+                        <layout manager="pack">
+                          <property name="side">left</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="em" named="True">
+                        <layout manager="pack">
+                          <property name="side">left</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="ey" named="True">
+                        <layout manager="pack">
+                          <property name="side">left</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Generate" named="True">
+            <property name="background">#c5b1ff</property>
+            <property name="command" type="command" cbtype="simple">generate</property>
+            <property name="height">21</property>
+            <property name="text" translatable="yes">Generate</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="fill">both</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
